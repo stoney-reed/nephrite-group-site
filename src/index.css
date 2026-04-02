@@ -1,0 +1,292 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f1f1f;
+  background: #f7f4ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f4ef;
+  color: #1f1f1f;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.site-header,
+.site-footer {
+  background: white;
+}
+
+.site-header {
+  border-bottom: 1px solid #e8e1d8;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-footer {
+  border-top: 1px solid #e8e1d8;
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.nav-row nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.hero {
+  padding: 4rem 0 2rem;
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.02;
+  max-width: 700px;
+  margin-bottom: 1rem;
+}
+
+.hero-copy p {
+  max-width: 650px;
+  font-size: 1.08rem;
+  color: #5e5a56;
+  line-height: 1.7;
+}
+
+.home-hero-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+  background: white;
+  border: 1px solid #e8e1d8;
+  border-radius: 20px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.salon-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.salon-card-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.salon-card-body {
+  padding: 1.25rem;
+}
+
+.muted-text {
+  color: #6b6b6b;
+}
+
+.salon-pricing,
+.salon-availability {
+  margin-top: 0.75rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #1f1f1f;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.secondary-button {
+  background: #d8c2a4;
+  color: #1f1f1f;
+}
+
+.page-section {
+  padding-top: 2rem;
+}
+
+.salon-hero {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.salon-hero-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.salon-hero-content h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  margin-bottom: 1rem;
+}
+
+.salon-hero-text {
+  max-width: 700px;
+  line-height: 1.7;
+  color: #5e5a56;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.gallery-section {
+  margin-top: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1rem;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.rental-form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.rental-form input,
+.rental-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #d9d1c7;
+  border-radius: 10px;
+  font: inherit;
+  background: white;
+}
+
+.rental-form textarea {
+  resize: vertical;
+}
+
+.rental-form fieldset {
+  border: 1px solid #e8e1d8;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.rental-form legend {
+  padding: 0 0.4rem;
+  font-weight: 600;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.45rem;
+}
+
+.conversion-section {
+  margin: 2rem 0;
+}
+
+.conversion-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.conversion-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.conversion-item {
+  padding: 1rem;
+  border: 1px solid #eadfce;
+  border-radius: 16px;
+  background: #fcf8f3;
+}
+
+.conversion-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.feature-list {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .home-hero-image,
+  .salon-hero-image {
+    height: 280px;
+  }
+
+  .gallery-image {
+    height: 200px;
+  }
+}
