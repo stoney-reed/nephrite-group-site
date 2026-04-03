@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { salons } from '../data/salons.js'
 
 const options = [
   'Shared Suite',
@@ -24,7 +25,7 @@ export default function RentalForm({ salon }) {
   return (
     <form
       className="card rental-form"
-      action="https://formspree.io/f/xzdkapjv"
+      action="https://formspree.io/f/your-form-id"
       method="POST"
     >
       <h3>{fullyBooked ? 'Join Waitlist' : 'Apply for Salon Chair Rental'}</h3>
@@ -55,30 +56,25 @@ export default function RentalForm({ salon }) {
         <legend>License Type</legend>
 
         <label className="checkbox-row">
-            <input type="radio" name="licenseType" value="Cosmetology" />
-            <span>Cosmetology</span>
+          <input type="radio" name="licenseType" value="Cosmetologist" required />
+          <span>Cosmetologist</span>
         </label>
 
         <label className="checkbox-row">
-            <input type="radio" name="licenseType" value="Esthetics" required />
-            <span>Esthetics</span>
+          <input type="radio" name="licenseType" value="Barber" />
+          <span>Barber</span>
         </label>
 
         <label className="checkbox-row">
-            <input type="radio" name="licenseType" value="Natural Hair Styling" />
-            <span>Natural Hair Styling</span>
+          <input type="radio" name="licenseType" value="Hair Stylist" />
+          <span>Hair Stylist</span>
         </label>
 
         <label className="checkbox-row">
-            <input type="radio" name="licenseType" value="Waxing" />
-            <span>Waxing</span>
+          <input type="radio" name="licenseType" value="Other" />
+          <span>Other</span>
         </label>
-
-        <label className="checkbox-row">
-            <input type="radio" name="licenseType" value="Barber" />
-            <span>Barber</span>
-        </label>
-        </fieldset>
+      </fieldset>
 
       <label htmlFor="yearsExperience">Years of Experience</label>
       <input
@@ -100,18 +96,25 @@ export default function RentalForm({ salon }) {
       <label htmlFor="portfolio">Portfolio or Instagram</label>
       <input
         id="portfolio"
-        type="text"
+        type="url"
         name="portfolio"
         placeholder="https://instagram.com/yourhandle"
       />
 
-      <label htmlFor="preferredLocation">Preferred Location</label>
-      <input
-        id="preferredLocation"
-        type="text"
-        name="preferredLocation"
-        placeholder="e.g. Narcissus Hair Design or Rochester area"
-      />
+      <fieldset>
+        <legend>Preferred Location</legend>
+
+        {salons.map((location) => (
+          <label key={location.id} className="checkbox-row">
+            <input
+              type="checkbox"
+              name="preferredLocation"
+              value={location.name}
+            />
+            <span>{location.name}</span>
+          </label>
+        ))}
+      </fieldset>
 
       <fieldset>
         <legend>What are you looking for?</legend>

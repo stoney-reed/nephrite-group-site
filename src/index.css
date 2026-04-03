@@ -275,6 +275,153 @@ img {
   line-height: 1.8;
 }
 
+.back-link {
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a6b4b;
+}
+
+.availability-banner {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid #eadfce;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #fffaf4 0%, #fff 100%);
+}
+
+.availability-banner-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.urgency-badge {
+  border: 1px solid #eadfce;
+  background: #f8efe4;
+  color: #7a5b3c;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.availability-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 1rem;
+}
+
+.availability-card {
+  border: 1px solid #eadfce;
+  border-radius: 18px;
+  padding: 1rem;
+  background: white;
+}
+
+.availability-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+}
+
+.urgency-text {
+  margin-top: 1rem;
+  color: #6f5844;
+  font-weight: 500;
+}
+
+.section-heading-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.about-stats {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.worker-card h3 {
+  margin-bottom: 0.25rem;
+}
+
+.sticky-cta {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 20;
+  background: #1f1f1f;
+  color: white;
+  padding: 0.9rem 1.1rem;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.salon-address,
+.salon-page-address {
+  color: #6b6b6b;
+  line-height: 1.5;
+}
+
+.salon-address {
+  margin-top: 0.35rem;
+}
+
+.salon-address,
+.salon-page-address {
+  color: #6b6b6b;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.salon-address:hover,
+.salon-page-address:hover {
+  text-decoration: underline;
+}
+
+.salon-address {
+  display: inline-block;
+  margin-top: 0.35rem;
+}
+
+.salon-page-address {
+  display: inline-block;
+  margin-top: -0.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.inline-address {
+  margin: 0;
+  font-weight: 400;
+}
+
+.salon-page-address {
+  margin-top: -0.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
 a {
   color: inherit;
   text-decoration: none;

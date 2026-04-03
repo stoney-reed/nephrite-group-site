@@ -8,6 +8,7 @@ export default function Header() {
 
         <nav>
           <Link to="/">Home</Link>
+          <Link to="/rochester-salon-rentals">Rochester Rentals</Link>
           <Link to="/about">About</Link>
         </nav>
       </div>
