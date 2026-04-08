@@ -11,27 +11,13 @@ export default function HomePage() {
       <main>
         <section className="hero container">
           <div className="hero-copy">
-            <h1>Salon spaces and beauty businesses built to grow.</h1>
+            <h1>Connecting Beauty To Spaces & Clients To Beauty</h1>
 
             <p>
               Nephrite Group helps clients discover trusted salon professionals
               and gives independent beauty professionals a place to grow their business.
             </p>
-
-            <div style={{ marginTop: '1.5rem' }}>
-              <a href="#locations" className="button">
-                View Locations
-              </a>
-            </div>
           </div>
-
-          {salons[0]?.heroImage && (
-            <img
-              src={salons[0].heroImage}
-              alt={salons[0].name}
-              className="home-hero-image"
-            />
-          )}
         </section>
 
         <section id="locations" className="container grid">
