@@ -37,13 +37,13 @@ export default function HomePage() {
               className={`pill ${mode === 'clients' ? 'pill--active' : ''}`}
               onClick={() => setMode('clients')}
             >
-              Clients
+              Book Services
             </button>
             <button
               className={`pill ${mode === 'professionals' ? 'pill--active' : ''}`}
               onClick={() => setMode('professionals')}
             >
-              Beauty Professionals
+              Rent a Space
             </button>
           </div>
         </section>
