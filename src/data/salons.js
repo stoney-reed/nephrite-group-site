@@ -67,17 +67,12 @@ export const salons = [
       },
       {
         name: 'Jess',
-        specialty: 'Bridal makeup, lashes, and braids',
+        specialty: 'Makeup & Esthetics',
         bookingOptions: [
           {
-            type: 'booking',
-            label: 'Book Jess',
-            value: 'https://square.site/book/jess',
-          },
-          {
-            type: 'text',
-            label: 'Text Jess',
-            value: '15855559876',
+            type: 'email',
+            label: 'Email Jess',
+            value: 'jessmuawedding@outlook.com',
           },
           {
             type: 'instagram',
